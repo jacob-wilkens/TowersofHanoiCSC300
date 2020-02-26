@@ -12,8 +12,6 @@ class Stack
         int pop();
         int peek();
         void display();
-        void sort();
-        Node* runToIndex(int index);
         bool isEmpty();
 
 };
