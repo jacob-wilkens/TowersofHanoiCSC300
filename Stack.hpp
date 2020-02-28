@@ -4,7 +4,6 @@ class Stack
 {
     private:
         Node* top;
-        int count;
 
     public:
         Stack();
@@ -12,6 +11,4 @@ class Stack
         int pop();
         int peek();
         void display();
-        bool isEmpty();
-
 };

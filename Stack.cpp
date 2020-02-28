@@ -4,7 +4,6 @@
 Stack::Stack()
 {
     this->top = 0;
-    this->count = 0;
 }
 
 void Stack::push(int payload)
@@ -20,7 +19,7 @@ void Stack::push(int payload)
     {
         this->top = n;
     }
-    this->count++;
+    
 }
 
 int Stack::pop()
@@ -30,7 +29,6 @@ int Stack::pop()
     top = top->getNextNode();
     temp->setNextNode(0);
     delete temp;
-    this->count--;
     return valueToReturn;
 }
 
@@ -53,13 +51,5 @@ void Stack::display()
     else
     {
         std::cout << "Empty Stack\n";
-    }
-}
-
-bool Stack::isEmpty(){
-    if(this->top == 0){
-        return true;
-    } else{
-        return false;
     }
 }
